@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ingress
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-devprod-tenant/ingress/ingress@sha256:ac0af8ff24242fb0c9158c6f188085a7f15abd603f5ea167bf970bfd085c66de
+        name: container-image
+        resources: {}
+status: {}
